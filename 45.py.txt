@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+counties = set()
+for _ in range(int(input())):
+    counties.add(input())
+
+print(len(counties))

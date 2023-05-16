@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+a = list(input().split(' ')).count('a')
+k = int(input())
+p = 1
+for i in range(k):
+    p *= (n-a-i)/(n-i)    
+print(1-p)

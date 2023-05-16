@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+num = int(input())
+l1 = list(map(int,input().split(" ")))
+l1.reverse()
+set1 = set(l1)
+num2 = int(input())
+
+for i in range(num2):
+    list1=list(input().split(" "))
+    if list1[0] == "pop":
+        set1.pop()
+    elif list1[0] == "remove":
+        set1.remove(int(list1[1]))
+    elif list1[0] == "discard":
+        set1.discard(int(list1[1]))
+
+print(sum(set1))

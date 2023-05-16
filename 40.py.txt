@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n, m = input().split()
+content = list(input().split())
+like = set(input().split())
+dislike = set(input().split())
+
+print(len([item for item in content if item in like]) - len([item for item in content if item in dislike]))

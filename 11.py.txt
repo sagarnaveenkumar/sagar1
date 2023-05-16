@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    my_dict = {}
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        my_dict[name] = score
+
+    values_my_dict = list(my_dict.values())
+    values_my_dict.sort()
+    new_set = set(values_my_dict)
+    sorted_set = sorted(list(new_set))
+    second_to_lowest = sorted_set[1]
+    name_list = [x for x in list(my_dict.keys()) if my_dict[x] == second_to_lowest]
+    name_list.sort()
+    for x in name_list:
+        print(x)
+        

@@ -1,0 +1,14 @@
+guage: PyPy3
+Open in editor
+1
+def mutate_string(string, position, character):
+2
+    n = list(string)
+3
+    n[position] = character
+4
+    string = "".join(n)
+5
+    return string
+6
+​

@@ -1,0 +1,9 @@
+from itertools import combinations_with_replacement
+
+data1 = input()
+
+stringDataList = list(data1.split()[0])
+stringDataList.sort()
+
+for i in list(combinations_with_replacement("".join(stringDataList),int(data1.split()[1]))):
+    print(''.join(i))

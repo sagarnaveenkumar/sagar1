@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+S = input()
+
+current_char = S[0]
+current_cnt = 0
+tuples = []
+for i in S:
+    if i == current_char:
+        current_cnt += 1
+    else:
+        tuples.append((current_cnt, int(current_char)))
+        current_cnt = 1
+        current_char = i
+
+tuples.append((current_cnt, int(current_char)))
+for i in tuples:
+    print(i, end=' ')

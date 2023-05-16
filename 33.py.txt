@@ -1,0 +1,11 @@
+def average(array):
+    d_l=[]
+    add=0
+    for value in arr:
+        if value not in d_l:
+            d_l.append(value)
+    for num in d_l:
+        add+=num
+    avg=add/len(d_l)
+    return avg
+    

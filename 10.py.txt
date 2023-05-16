@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+test_list = list(arr)
+max_in_arr = max(test_list)
+new_list = [x for x in test_list if x != max_in_arr]
+print(max(new_list))

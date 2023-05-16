@@ -1,0 +1,20 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+T=int(input())
+for i in range(T):
+    n=int(input())
+    p=list(map(int,input().split()))
+    
+    if len(p)%2!=0:
+        for j in range(0,(len(p)+1//2)):
+           if p[0]<p[0+j] and p[-1]<p[-1-j]:
+            print("No")
+            break
+        else:
+            print("Yes")
+    elif len(p)%2==0:
+        for k in range(0,(len(p)//2)):
+           if p[0]<p[0+k] and p[-1]<p[-1-k]:
+            print("No")
+            break
+        else:
+            print("Yes")

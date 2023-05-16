@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    s = input()
+    metacheck = [False]*5
+    for element in s:
+        subcheck = [
+            element.isalnum(), element.isalpha(), element.isdigit(), 
+            element.islower(), element.isupper()
+            ]
+        i = 0
+        while i < 5:
+            if subcheck[i] == True:
+                metacheck[i] = True
+                i += 1
+            else:
+                i += 1
+    for metaelement in metacheck:
+        print(metaelement)
